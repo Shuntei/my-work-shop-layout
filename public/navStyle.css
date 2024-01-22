@@ -1,0 +1,9 @@
+.bi-person-circle, .bi-cart4{
+    color: rgb(124, 124, 124);
+}
+.cart-msg{
+    top: 5px !important;
+    left: 25px !important;
+    font-size: 10px;
+    padding: 5px !important;
+}

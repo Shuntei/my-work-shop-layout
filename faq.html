@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常見問題</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="public/css/style.css"> -->
+    <link rel="stylesheet" href="public/navStyle.css">
+    <style>
+        *{
+            /* padding: 0 !important;
+            margin: 0 !important; */
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <main class="flex-grow-1 flex-grow-1 mb-3">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Cama</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="product-list.html">產品列表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">產品內頁(作業)</a>
+                    </li>                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="store.html">門市資訊</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="faq.html">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">聯絡我們</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link d-block d-lg-none" href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal">會員登入</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link d-block d-lg-none" href="cart.html">購物車</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <div class="d-flex flex-column flex-md-row ms-2 mt-md-0 mt-2">
+                    <a href="javascript:;" class="me-2 ms-2">
+                        <i class="bi bi-person-circle fs-3 d-lg-block d-none" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </a>
+                    <a href="#" class="me-2 ms-2 position-relative">
+                        <i class="bi bi-cart4 fs-3 d-lg-block d-none"></i>
+                        <span class="cart-msg position-absolute top-0 start-100 
+                        translate-middle badge border border-light rounded-circle 
+                        bg-danger p-2 d-lg-block d-none">99+<span class="visually-hidden"></span>
+                    </a>
+                    <a href="#" class="me-2 ms-2">
+                        <i class="bi bi-facebook fs-3 d-lg-block d-none"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <!-- breadcrumb -->
+        <div class="bg-warning ps-5 py-1 d-flex align-items-center">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0" >
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">常見問題</li>
+                </ol>
+            </nav> 
+        </div>
+
+        <div class="container">
+            <div class="row">                    
+                <h1 class="col-12 text-center mt-3">常見問題</h1>            
+                <div class="col-12 col-md-4 col-lg-2 mb-3">
+                    <div class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                            The current button
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">A second item</button>
+                        <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                        <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+                        <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-10">
+                    <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            電話銀行服務內容
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        玉山銀行24小時服務專線：(02)2182-1313、0800-30-1313 (以市話撥打)，國外請撥：國際冠碼+886-2-2182-1313。
+                            (English Service please press 7)                       
+                            電話撥通後，請直接輸入服務項目對應功能號碼，即可享受便捷的電話語音自動化服務。
+                            信用卡語音服務說明
+                            掛失、道路救援及海外緊急支援服務	請按0
+                            信用卡服務	請按1
+                            確認詐騙電話及簡訊真偽	請按5
+                            銀行服務常用功能
+                            帳戶餘額查詢	請按211
+                            當日支票待補票查詢	請按212
+                            帳戶交易明細傳	請按213
+                            台幣本行轉帳	請按221
+                            台幣跨行轉帳	請按222
+                            查詢貸款應繳金額	請按242
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            金融卡每日可以轉帳及提款多少金額呢？
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            「每日」是以淩晨00:00為跨日時點。
+                            轉帳：透過不同的轉帳方式會有不同的限額，下列為各種轉帳方式的限額：
+                            非約定轉帳：所有通路(含自動櫃員機、WebATM、MOD等)合併計算，上限為每筆/每日3萬元整。
+                            約定帳號轉帳：每日上限為200萬元。
+                            提醒您：各種轉帳方式皆不會相互影響轉帳限額(例如：已用WebATM轉帳3萬元，約定轉帳限額仍然是200萬元)，因此您每一日共可以轉帳203萬元。
+                            提款：本行部份ATM單筆提款限額可為新臺幣5萬元，跨行ATM一次提領限額為2萬元，每日提款最高新台幣15萬元。
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                如何查詢信用卡辦卡進度?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                                您可於官網查詢辦卡進度，完成身分驗證後查看。
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                如何查詢信用卡帳單金額?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            您可透過以下方式查詢帳單金額  
+                            網路銀行：登入網路銀行→信用卡→信用卡帳單/明細→信用卡帳單資訊→可查詢近3個月帳單金額。
+                            行動銀行：登入行動銀行→信用卡→帳單資訊→可查詢近一年帳單金額。
+                            客服中心：請點選智能客服，輸入『信用卡帳單』，依指示輸入簡訊密碼驗證，可查詢最近一期帳單明細。
+                            電話語音：撥打語音專線(02)2182-1313→按快速碼”113”→依語音指示輸入正卡人身分證字號及國曆出生年月日→可查詢最近一期帳單金額。
+                            玉山Wallet：登入玉山Wallet→帳務→查看明細→可查詢近一年的帳單明細。
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion mt-3" id="accordionExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                如果金融卡不慎遺失時，該怎麼辦呢？
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                            掛失方式如下：
+                            (1) 登入電腦版個人網路銀行：點選個人設定與服務> 掛失與功能設定>其他掛失。
+                            (2) 致電客服中心(02)2182-1313或0800-30-1313(限市話) #231 掛失金融卡。
+                            ◎ 年滿18歲之成年人，請本人於營業時間攜帶身分證正本、原留印鑑至鄰近分行皆可辦理補發，手續費100元/張；未成年請依未成年事故辦理規範。
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="accordion" id="accordionExample3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    （信貸）「個人信貸」最高可以貸多少金額？利率最低為多少？需要費用嗎？期限最長多久？
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    最高申請金額為300萬元，分期期數12~84期。貸款費用及利率依各專案內容而定。最長貸款期間7年。
+                                    (實際借款額度依顧客財力證明與信用狀況有所不同，本行保有最終核貸與否之權利。)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>  
+            </div>
+        </div>
+        <!-- .container>.row>h1.col-12{產品列表}+.col-12.mb-3.col-md-6.col-xl-3*20>a>img^a.link-dark[href="#"]{產品$} -->
+    </main>
+    <footer class="container-fluid bg-warning bg-opacity-50 py-2">
+        <div class="row text-center">
+            <div class="col-12">Copyright &copy; Cama</div>
+        </div>
+    </footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body w-75 mx-auto pb-5 mb-5">
+                <h5 class="modal-title text-center" id="exampleModalLabel">登入</h5>
+                <p class="text-center">立即登入，隨時收到獨家優惠</p>
+                <form action="" class="needs-validation" novalidate>
+                    <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="account" name="account" placeholder="" required>
+                    <label for="account">帳號</label>
+                    <div class="invalid-feedback">
+                        *請填入正確格式,例如:name@example.com
+                    </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                    <input type="password" class="datepicker form-control" id="password" name="password" placeholder="" required>
+                    <label for="password">密碼</label>
+                    <div class="invalid-feedback">
+                        *此為必填欄位
+                    </div>
+                    </div>
+                    <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">登入</button>    
+                    </div>
+                </form>         
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="public/verify.js"></script>
+</body>
+</html>

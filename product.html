@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品內頁</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"
+      integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="public/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .navbar > div > ul > li > a{
+        color: #fff;
+      }
+      .navbar-custom
+        .navbar-nav:first-child
+        .nav-item:not(:last-child)
+        .nav-link::after {
+        content: "|";
+        margin-left: 8px;
+      }
+      .starRating-custom > a:nth-child(2)::after {
+        content: "|";
+        margin-left: 8px;
+        margin-right: 8px;
+        color: lightgray;
+      }
+      .starRating-custom > a:nth-child(4)::after {
+        content: "|";
+        margin-left: 10px;
+        margin-right: 5px;
+        color: lightgray;
+      }
+      .nav-brand-custom::before {
+        content: "|";
+        margin-left: 12px;
+        margin-right: 10px;
+        font-size: 30px;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+      }
+      .input-custom {
+        height: 30px;
+      }
+      .amountBtn-custom {
+        width: 30px;
+      }
+      .sizeBtn-custom:hover{
+        border: 1px solid #d0011b;
+        color: #d0011b;
+      }
+      .btn-custom {
+        border: 1px solid lightgrey;
+      }
+      .btn-custom:focus {
+        color: #d0011b;
+        border: 1px solid #d0011b;
+      }
+      .pseudo-custom::after {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgb(221, 217, 217);
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+      .mySwiper2 {
+        height: 70%;
+        width: 100%;
+      }
+      .mySwiper {
+        height: 30%;
+        box-sizing: border-box;
+      }
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+      .mySwiper2 > .swiper-wrapper > .swiper-slide > img {
+        width: 80%;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        background-color: grey;
+        color: white;
+        opacity: 0.4;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- navbar-sub -->
+      <nav class="navbar navbar-expand navbar-dark py-0 navbar-custom" style="background-color: #d0011b;">
+        <div class="container">
+          <ul class="navbar-nav me-auto my-2 my-lg-0">
+            <li class="nav-item d-flex">
+              <a class="nav-link" href="#">假皮購物</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0 ms-0" href="#">開始隨即拍賣囉!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0 ms-0" href="#">下載</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0 ms-0" href="#">追蹤我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0 ms-0" href="#">蝦品輯部落格</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">通知總覽</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">幫助中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">繁體中文</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">註冊&nbsp;|&nbsp;登入</a>
+            </li>
+          </ul>
+        </div>
+      </nav>  
+    <!-- navbar main -->
+      <nav class="navbar navbar-expand navbar-dark py-1" style="background-color: #d0011b;">
+        <div class="container">
+          <i class="bi bi-shop navbar-text text-white fs-1"></i>
+          <div class="nav-brand-custom"></div>
+          <a class="navbar-brand fs-1" href="#">假的蝦皮商城</a>
+          <form class="d-flex bg-white ms-auto p-1">
+            <input
+              class="form-control border-0 me-2"
+              size="45"
+              type="search"
+              placeholder="在商城搜尋"
+              aria-label="在商城搜尋"
+            />
+            <button class="btn px-4 text-white" style="background-color:#d0011b;border-radius: 2px;" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div class="navbar-nav my-2 ms-4 ps-1">
+            <li class="nav-item">
+              <a class="nav-link active fs-2" aria-current="page" href="#">
+                <i class="bi bi-cart"></i>
+              </a>
+            </li>
+          </div>
+        </div>
+      </nav>
+    <!-- breadcrumb -->
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="bg-light pb-1 d-flex align-items-center"
+      >
+        <div class="container">
+          <ol class="breadcrumb mb-0 py-3">
+            <li class="breadcrumb-item">
+              <a href="#" class="text-decoration-none">假皮購物</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="text-decoration-none">運動/健身</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="text-decoration-none">運動鞋款</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="text-decoration-none">慢跑鞋(女)</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              NIKE 慢跑鞋 運動鞋 W REVOLUTION 6 NN 女 DC3729 兩色任選 現貨 廠商直送
+            </li>
+          </ol>
+        </div>
+      </nav>
+    <!-- product zone -->
+    <div class="container bg-white pt-3">
+      <div class="row">
+        <div class="col-6 bg-white">
+          <div class="row">
+            <div class="col-12">
+              <!-- big images -->
+              <div style="--swiper-navigation-color: #fff;
+                  --swiper-pagination-color: #fff;"
+                class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="public/img/product/one.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/two.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/three.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/four.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/five.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/six.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/seven.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/eight.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/nine.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/ten.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/womenSize.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/delivery.jpg" />
+                  </div>
+                </div>
+              </div>
+              <!-- small images -->
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="public/img/product/one.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/two.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/three.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/four.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/five.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/six.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/seven.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/eight.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/nine.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/ten.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/womenSize.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="public/img/product/delivery.jpg" />
+                  </div>
+                </div>
+                <button class="swiper-button-next border-0 end-0"></button>
+                <button class="swiper-button-prev border-0 start-0"></button>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="text-center">
+                分享:
+                <i class="fa-brands fa-facebook-messenger" style="color: #539cea;"></i>
+                <i class="fa-brands fa-facebook" style="color: #2038ee;"></i>
+                <i class="fa-brands fa-pinterest" style="color: #e83617;"></i>
+                <i class="fa-brands fa-twitter" style="color: #7accf5;"></i>
+                <span class="ps-3 pe-5">|</span>
+                <i class="fa-regular fa-heart" style="color: #fd8181;"></i>
+                喜歡(184)
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main content -->
+        <div class="col-6 bg-white">
+          <h5 class="col-12">
+            NIKE 慢跑鞋 運動鞋 W REVOLUTION 6 NN 女 DC3729 兩色任選 現貨
+            廠商直送
+          </h5>
+          <div class="col-12">
+            <div class="d-flex justify-content-between">
+              <div class="starRating-custom">
+                <a href=""  style="color: #d0011b;">5.0&nbsp;</a>
+                <a href="" class="text-decoration-none" style="color: #d0011b;">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </a>
+                <a href="" class="text-dark">63&nbsp;</a>
+                <a href="" class="text-decoration-none" style="color: grey">評價</a>
+                <span>136 <span style="color: grey">已售</span></span>
+              </div>
+              <div>
+                <a href="" class="text-decoration-none" style="color: grey"
+                  >匿名檢舉商品</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex align-items-center bg-light p-2 mt-2">
+            <div>$2,100</div>
+            <div class="fs-2 fw-bold ms-2" style="color: #d0011b;">$1,390</div>
+            <div class="badge ms-2 px-1" style="color: #fff;background-color: #d0011b;border-radius: 2px;">6.6折</div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-2">賣場優惠券</div>
+            <div class="col-10">
+              <div
+                id="myTooltip"
+                class="d-flex"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="賣場優惠券
+                使用這些商店優惠券讓你為你購物車中的商品節省更多。" 
+              >
+                <div class="me-3 p-1" style="color: #d0011b;background-color: #feeded;border-radius: 2px;font-size: 14px;">現折$100</div>
+                <div class="me-3 p-1" style="color: #d0011b;background-color: #feeded;border-radius: 2px;font-size: 14px;">現折$300</div>
+                <div class="me-3 p-1" style="color: #d0011b;background-color: #feeded;border-radius: 2px;font-size: 14px;">現折$240</div>
+                <div class="me-3 p-1" style="color: #d0011b;background-color: #feeded;border-radius: 2px;font-size: 14px;">現折$230</div>
+                <div class="me-3 p-1" style="color: #d0011b;background-color: #feeded;border-radius: 2px;font-size: 14px;">現折$350</div>
+                <div class="me-3 p-1" style="color: #d0011b;background-color: #feeded;border-radius: 2px;font-size: 14px;">顯示全部 <i class="fa-solid fa-circle-chevron-down"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-2">運送</div>
+            <div class="col-10">
+              <div><img src="public/img/product/免運費.png" style="width: 26px">&nbsp;免運費</div>
+              <div class="d-flex mt-2">
+                &nbsp;<div><img src="public/img/product/運費.svg" style="width: 20px">&nbsp;運費</div>
+                <div class="ms-5 ps-5">&nbsp;$0&nbsp;<i class="fa-solid fa-chevron-down"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 pt-3">
+            <div class="col-2">顏色</div>
+            <div class="col-10 d-flex">
+              <button class="bg-white btn-custom p-2 sizeBtn-custom" style="font-size: 14px;"><img src="public/img/product/two.jpg" width="25px" style="vertical-align:middle;"> A.黑白DC3729003</button>
+              <button class="bg-white btn-custom ms-2 p-2 sizeBtn-custom" style="font-size: 14px;"><img src="public/img/product/three.jpg" width="25px" style="vertical-align:middle;"> B.白紫DC3729106</button>
+            </div>
+          </div>
+          <div class="row mt-2 mb-2 pt-2">
+            <div class="col-2 mt-2">尺寸</div>
+            <div class="col-10">
+              <button class="bg-white btn-custom mt-2 py-2 sizeBtn-custom" style="font-size: 14px;" >US&nbsp;5=22CM</button>
+              <button class="bg-white btn-custom mt-2 py-2" style="font-size: 14px;"  disabled>US&nbsp;5.5=22.5CM</button>
+              <button class="bg-white btn-custom mt-2 py-2 sizeBtn-custom" style="font-size: 14px;" >US&nbsp;6=23CM</button>
+              <button class="bg-white btn-custom mt-2 py-2 sizeBtn-custom" style="font-size: 14px;" >US&nbsp;6.5=23.5CM</button>
+              <button class="bg-white btn-custom mt-2 py-2 sizeBtn-custom" style="font-size: 14px;" >US&nbsp;7=24CM</button>
+              <button class="bg-white btn-custom mt-2 py-2 sizeBtn-custom" style="font-size: 14px;" >US&nbsp;7.5=24.5CM</button>
+              <button class="bg-white btn-custom mt-2 py-2 sizeBtn-custom" style="font-size: 14px;" >US&nbsp;8=25CM</button>
+              <button class="bg-white btn-custom mt-2 py-2" style="font-size: 14px;"  disabled>US&nbsp;8.5=25.5CM</button>
+              <button class="bg-white btn-custom mt-2 py-2" style="font-size: 14px;"  disabled>US&nbsp;9=26CM</button>
+              <button class="bg-white btn-custom mt-2 py-2" style="font-size: 14px;"  disabled>US&nbsp;9.5=26.5CM</button>
+              <button class="bg-white btn-custom mt-2 py-2" style="font-size: 14px;"  disabled>US&nbsp;10=27CM</button>
+            </div>
+          </div>
+          <div class="row mb-4 pb-1 mt-5">
+            <div class="col-2">數量</div>
+            <div class="col-10 d-flex">
+              <div class="input-group input-custom">
+                <button id="minus" class="bg-white border-dark border-1 button-custom">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <input
+                  id="amount"
+                  onkeyup="value=value.replace(/[^\d]/g,'') "
+                  size="4"
+                  aria-label="Example text with two button addons"
+                  class="focus-ring-none border-1 text-center"
+                />
+                <button id="plus" class="bg-white border-dark border-1 amountBtn-custom">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="ms-3">還剩123件</div>
+              </div>
+            </div>
+          </div>
+            <div class="row pseudo-custom">
+              <button class="col-4 ms-2" style="background-color: #fce8e8;color:#d0011b;border-radius: 2px;
+              border:1px solid #d0011b; width:180px;line-height: 50px;font-size: 15px;"
+              onMouseOver="style.backgroundColor='#faf2f2'" 
+              onMouseOut="style.backgroundColor='#fce8e8'"
+              >
+              <i class="bi bi-cart-plus"></i>&nbsp;
+               加入購物車
+              </button>
+              <button class="col-4 ms-3" style="background-color: #d0011b;color: #fff;border-radius: 2px;
+              border: none; width:180px;line-height: 50px;font-size: 15px;"
+              onMouseOver="style.backgroundColor='#cb1e35'" 
+              onMouseOut="style.backgroundColor='#d0011b'">
+              直接購買</button>
+            </div>
+            <div class="row col-12 mb-3 d-flex">
+              <div class="col-4 text-start"><img src="public/img/product/15天鑑賞期.png" style="width: 20px;">&nbsp;15天鑑賞期</div>
+              <div class="col-4 text-center"><img src="public/img/product/假皮安心退.png" style="width: 20px;">&nbsp;假皮安心退</div>
+              <div class="col-4 text-end"><img src="public/img/product/正品保障.png" style="width: 20px;">&nbsp;正品保障</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- rating-zone -->
+    <div class="container bg-white mt-3 py-4 d-flex align-items-center">
+      <div class="col-4">
+        <div class="row">
+          <div class="col-4 ps-4 ">
+            <img src="public/img/product/超級品牌運動館.jpg" style="width: 90px;">
+          </div>
+          <div class="col-7" style="border-right: 1px solid lightgray">
+            <div>超級品牌運動館</div>
+            <p style="font-size: 14px; color: grey" class="mb-2">28分鐘前上線</p>
+            <div>
+              <button class="me-2" style="background-color: #fce8e8;color:#d0011b; 
+              border:1px solid #d0011b; width:70px;line-height: 30px;font-size: 15px;border-radius: 2px;"
+              onMouseOver="style.backgroundColor='#faf2f2'" 
+              onMouseOut="style.backgroundColor='#fce8e8'">聊聊</button>
+              <button style="background-color: #fff;color:grey; 
+              border:1px solid lightgrey; width:100px;line-height: 30px;font-size: 15px;border-radius: 2px"
+              onMouseOver="style.backgroundColor='rgb(249, 249, 249)'" 
+              onMouseOut="style.backgroundColor='#fff'">查看賣場</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 pe-3">
+        <div class="row">
+          <div class="col-2">商品評價</div>
+          <div class="col-2 text-end" style="color: #d0011b;">9.4萬</div>
+          <div class="col-2">聊聊回應率</div>
+          <div class="col-2 text-end" style="color: #d0011b;">96%</div>
+          <div class="col-2">加入時間</div>
+          <div class="col-2 text-end" style="color: #d0011b;">4年 前</div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-2">商品</div>
+          <div class="col-2 text-end" style="color: #d0011b;">6,942</div>
+          <div class="col-2">回應速度</div>
+          <div class="col-2 text-end" style="color: #d0011b;">幾小時內</div>
+          <div class="col-2">粉絲</div>
+          <div class="col-2 text-end" style="color: #d0011b;">29.5萬</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product description & rating & rightSide -->
+    <div class="container px-0">
+      <div class="row mt-3 me-0">
+        <!-- description -->
+        <div class="col-10">
+          <div class="container bg-white py-4 px-4">
+            <div class="row">
+              <div class="col-12">
+                <h5 class="col-12 py-3 bg-light px-2">商品規格</h5>
+                <div class="row px-2">
+                  <div class="col-2">分類</div>
+                  <div class="col-10">
+                    <nav
+                      style="--bs-breadcrumb-divider: '>'"
+                      aria-label="breadcrumb"
+                    >
+                      <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                          <a href="#" class="text-decoration-none">假皮購物</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                          <a href="#" class="text-decoration-none">運動/健身</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                          <a href="#" class="text-decoration-none">運動鞋款</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                          <a href="#" class="text-decoration-none"
+                            >慢跑鞋(女)</a
+                          >
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+                <div class="row mt-2 px-2">
+                  <div class="col-2">品牌</div>
+                  <div class="col-10">NIKE</div>
+                </div>
+                <div class="row mt-2 px-2">
+                  <div class="col-2">性別</div>
+                  <div class="col-10">女性</div>
+                </div>
+                <div class="row mt-2 px-2">
+                  <div class="col-2">商品數量</div>
+                  <div class="col-10">119</div>
+                </div>
+                <div class="row mt-2 px-2">
+                  <div class="col-2">出貨地</div>
+                  <div class="col-10">桃園市楊梅區</div>
+                </div>
+                <h5 class="col-12 bg-light py-3 mt-4 px-2">商品描述</h5>
+                <div class="col-12 px-2">
+                  此商品由「廠商出貨」，預計訂單完成付款後3個工作天內出貨(不含週六日及國定假日)；若為「較長備貨」賣場，出貨日以系統呈現為準。<br />
+                  ※此商品僅提供配送台灣本島各縣市，離島地區恕不在此配送範圍內<br />
+                  ※部份商品，偏遠地區無法配送貨或需加收運費，訂購後會有專人與您連繫<br />
+                  ※商品僅配送至收貨地址一樓，無協助搬運上樓。若需送至二樓以上，配送司機將會額外索取搬運費用(現場收取)<br />
+                  ※同筆訂單內若含多個「廠商直送」商品，將可能分批到貨<br />
+                  ※例假日、國定假日訂單，將於下個工作日盡速安排出貨事宜<br />
+                  ※若遇天候等不可抗力之因素，可能延後<br />
+                  <br />
+                  商品名稱：多款任選<br />
+                  尺寸範圍：如商品選項所示<br />
+                  顏色：多款任選<br />
+                  產地：依鞋盒上產地為準<br />
+                  型號：多款任選<br />
+                  <br />
+                  退換貨須知：<br />
+                  <br />
+                  商品到貨隔日享假皮15天鑑賞(猶豫)期之權益【鑑賞(猶豫)期非試用期】，辦理退貨商品必須是全新狀態且需以本公司或特約商所使用的外包裝(紙箱或包裝袋)，
+                  妥善包裝後交付給前往取件的物流公司；若本公司或特約商的外包裝已經遺失，請您在商品原廠外盒外，再以其他適當的外盒進行包裝，
+                  請勿於商品原廠外盒上直接黏貼任何單據或書寫文字，否則將會影響退貨權限。<br />
+                  <br />
+                  ●因衛生考量而密封之個人衛生用品，如拆封檢查試穿（用）後再次出售，有影響衛生之虞。故除商品本身有瑕疵外，
+                  縱使拆封後可恢復原狀，均不提供退換貨服務，請務必確認有購買商品需求再行拆封，以免影響權益。<br />
+                  ●網頁商品會因為使用不同的品牌螢幕以及解析度不同，造成圖片顏色呈現略有不同，請以實品顏色為準。
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- rating -->
+          <div class="container bg-white mt-3 py-3">
+            <h5 class="my-2 pb-2 mx-3">商品評價</h5>
+            <div class="row p-3 mx-3" style="background-color: rgb(255, 250, 249);border: 1px solid #f8e9e9;">
+              <div class="col-2 text-center fs-5 mt-2 py-1" style="color: #d0011b;">
+                <div><span class="fs-3">5.0</span>/5</div>                  
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="col-10 mt-2 mb-3">
+                <button class="bg-white me-1 px-4 mt-2 py-1 btn-custom">全部</button>
+                <button class="bg-white me-1 px-4 mt-2 py-1 btn-custom">5星(62)</button>
+                <button class="bg-white me-1 px-4 mt-2 py-1 btn-custom">4星(2)</button>
+                <button class="bg-white me-1 px-4 mt-2 py-1 btn-custom">3星(0)</button>
+                <button class="bg-white me-1 px-4 mt-2 py-1 btn-custom">2星(0)</button>
+                <button class="bg-white me-1 px-4 mt-2 py-1 btn-custom">1星(0)</button>
+                <button class="bg-white me-1 px-4 mt-2 py-1 btn-custom">
+                  附上評論(18)
+                </button>
+                <button class="bg-white me-1 px-4 mt-2 py-1 btn-custom">
+                  附上照片/影片(10)
+                </button>
+              </div>
+            </div>
+            <!-- comment -->
+            <div class="mx-3 border-bottom">
+              <div class="row ms-4 mt-3">
+                <div class="col-1 ps-0">
+                  <img src="public/img/product/ps1.jpg" style="border-radius:50%;width: 45px;" alt="">
+                </div>
+                <div class="col-11 ps-0" style="margin-left: -25px;">
+                  <p class="mb-0" style="font-size: 12px;">k*****8</p>
+                  <p class="mb-1" style="color: #d0011b;font-size: 13px;">                  
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p style="color: grey; font-size: 12px;">2023-12-14 23:23 | 規格: B.白紫DC3729106,US 8=25CM</p>
+                  <p style="font-size: 14px;">
+                    <span style="display: inline-block;"><span style="color: grey;">品質:</span>很棒</span><br>
+                    <span style="display: inline-block;" class="pt-1 mt-1"><span style="color: grey;">效能:</span>很棒</span><br>
+                    <span style="display: inline-block;" class="pt-1 mt-1"><span style="color: grey;">和圖片相符:</span>相符</span><br>
+                    <span style="display: inline-block" class="pt-2 mt-1">買了一台跑步機放室內，所以也要一雙美麗的專用於室內跑鞋陪我一起跑，剛好有特價，所以cp值不錯！</span>
+                  </p>
+                  <div class="d-flex" style="width: 300px;height: 70px;">
+                    <iframe sandbox="" src="public/img/product/sho1.mp4" style="width: 70px; object-fit: cover;" alt="problem"></iframe>
+                    <img src="public/img/product/shoe1.jpg" style="width: 70px; object-fit: cover;" alt="problem" class="ms-2">
+                  </div>
+                </div>
+                <div class="mt-4 mb-3 d-flex justify-content-between" style="color:rgb(192, 192, 192);font-size: 14px;">
+                  <span class="ps-5"><i class="fa-solid fa-thumbs-up"></i>&nbsp;3</span>
+                  <span style="margin-left: -30px;"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div> 
+            </div>
+            <div class="mx-3 border-bottom">
+              <div class="row ms-4 mt-3">
+                <div class="col-1 ps-0">
+                  <img src="public/img/product/ps2.jpg" style="border-radius:50%;width: 45px;" alt="">
+                </div>
+                <div class="col-11 ps-0" style="margin-left: -25px;">
+                  <p class="mb-0" style="font-size: 12px;">y*****o</p>
+                  <p class="mb-1" style="color: #d0011b;font-size: 13px;">                  
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p style="color: grey; font-size: 12px;">2023-12-26 15:47 | 規格: A.黑白DC3729003,US 6.5=23.5CM</p>
+                  <p style="font-size: 14px;">
+                    <span style="display: inline-block" class="pt-1">出貨快速，商品與描述相符，商品包裝良好也沒有異味，版型偏小建議尺寸買大一碼，是值得下次再回購及推薦的賣家。</span>
+                  </p>
+                  <div class="d-flex" style="width: 300px;height: 70px;">
+                    <iframe sandbox="" src="public/img/product/shoe2.mp4" style="width: 70px; object-fit: cover;" alt="problem"></iframe>
+                    <img src="public/img/product/shoe2.jpg" style="width:  70px; object-fit: cover;" alt="problem" class="ms-2">
+                  </div>
+                </div>
+                <div class="mt-4 mb-3 d-flex justify-content-between" style="color:rgb(192, 192, 192);font-size: 14px;">
+                  <span class="ps-5"><i class="fa-solid fa-thumbs-up"></i>&nbsp;<span style="font-size: 14px">有幫助的評價</span></span>
+                  <span style="margin-left: -30px;"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div> 
+            </div>
+            <div class="mx-3 border-bottom">
+              <div class="row ms-4 mt-3">
+                <div class="col-1 ps-0">
+                  <img src="public/img/product/ps3.jpg" style="border-radius:50%;width: 45px;" alt="">
+                </div>
+                <div class="col-11 ps-0" style="margin-left: -25px;">
+                  <p class="mb-0" style="font-size: 12px;">a*****m</p>
+                  <p class="mb-1" style="color: #d0011b;font-size: 13px;">                  
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p style="color: grey; font-size: 12px;">2023-11-18 00:20 | 規格: B.白紫DC3729106,US 7=24CM</p>
+                  <p style="font-size: 14px;">
+                    <span style="display: inline-block" class="pt-1">包裝非常的完整，而且出貨速度超級快兩天就到貨了，品質也很好，而且還可送到家</span>
+                  </p>
+                  <div class="d-flex" style="width: 300px;height: 70px;">
+                    <iframe sandbox="" src="public/img/product/shoe3.mp4" style="width: 70px; object-fit: cover;" alt="problem"></iframe>
+                    <img src="public/img/product/shoe3.jpg" style="width: 70px; object-fit: cover;" alt="problem" class="ms-2">
+                  </div>
+                </div>
+                <div class="mt-4 mb-3 d-flex justify-content-between" style="color:rgb(192, 192, 192);font-size: 14px;">
+                  <span class="ps-5"><i class="fa-solid fa-thumbs-up"></i>&nbsp;1</span>
+                  <span style="margin-left: -30px;"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div> 
+            </div>
+            <div class="mx-3 border-bottom">
+              <div class="row ms-4 mt-3">
+                <div class="col-1 ps-0">
+                  <img src="public/img/product/ps4.jpg" style="border-radius:50%;width: 45px;" alt="">
+                </div>
+                <div class="col-11 ps-0" style="margin-left: -25px;">
+                  <p class="mb-0" style="font-size: 12px;">6*****z</p>
+                  <p class="mb-1" style="color: #d0011b;font-size: 13px;">                  
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p style="color: grey; font-size: 12px;">2023-12-07 09:49 | 規格: A.黑白DC3729003,US 8=25CM</p>
+                  <p style="font-size: 14px;">
+                    <span style="display: inline-block;"><span style="color: grey;">品質:</span>很好</span><br>
+                    <span style="display: inline-block;" class="pt-1 mt-1"><span style="color: grey;">效能:</span>很好</span><br>
+                    <span style="display: inline-block;" class="pt-1 mt-1"><span style="color: grey;">和圖片相符:</span>相符</span><br>
+                    <span style="display: inline-block" class="pt-2 mt-1">新光忠孝NIKE寄貨，黑貓在急便送貨，很快就送到。</span>
+                  </p>
+                  <div class="d-flex" style="width: 300px;height: 70px;">
+                    <iframe sandbox="" src="public/img/product/shoe4.mp4" style="width: 70px; object-fit: cover;" alt="problem"></iframe>
+                    <img src="public/img/product/shoe4.jpg" style="width: 70px; object-fit: cover;" alt="problem" class="ms-2">
+                  </div>
+                </div>
+                <div class="mt-4 mb-3 d-flex justify-content-between" style="color:rgb(192, 192, 192);font-size:14px;">
+                  <span class="ps-5"><i class="fa-solid fa-thumbs-up"></i>&nbsp;有幫助的評價</span>
+                  <span style="margin-left: -30px;"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div> 
+            </div>            
+            <div class="mx-3 border-bottom">
+              <div class="row ms-4 mt-3">
+                <div class="col-1 ps-0">
+                  <img src="public/img/product/ps5.jpg" style="border-radius:50%;width: 45px;" alt="">
+                </div>
+                <div class="col-11 ps-0" style="margin-left: -25px;">
+                  <p class="mb-0" style="font-size: 12px;">f*****3</p>
+                  <p class="mb-1" style="color: #d0011b;font-size: 13px;">                  
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p style="color: grey; font-size: 12px;">2024-01-14 18:23 | 規格: A.黑白DC3729003,US 7.5=24.5CM</p>
+                  <p style="font-size: 14px;">
+                    <span style="display: inline-block" class="pt-1">下單後隔天寄件，出貨非常迅速，鞋子穿起來好看、舒適，CP值超高，價格也很優惠，值得推薦！</span>
+                  </p>
+                  <div class="d-flex" style="width: 300px;height: 70px;">
+                    <iframe sandbox="" src="public/img/product/shoe5.mp4" style="width: 70px; object-fit: cover;" alt="problem"></iframe>
+                    <img src="public/img/product/shoe5.jpg" style="width: 70px; object-fit: cover;" alt="problem" class="ms-2">
+                  </div>
+                </div>
+                <div class="mt-4 mb-3 d-flex justify-content-between" style="color:rgb(192, 192, 192);font-size: 14px;">
+                  <span class="ps-5"><i class="fa-solid fa-thumbs-up"></i>&nbsp;有幫助的評價</span>
+                  <span style="margin-left: -30px;"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div> 
+            </div>
+            <div class="mx-3 border-bottom">
+              <div class="row ms-4 mt-3">
+                <div class="col-1 ps-0">
+                  <img src="public/img/product/ps6.jpg" style="border-radius:50%;width: 45px;" alt="">
+                </div>
+                <div class="col-11 ps-0" style="margin-left: -25px;">
+                  <p class="mb-0" style="font-size: 12px;">j*****g</p>
+                  <p class="mb-1" style="color: #d0011b;font-size: 13px;">                  
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p style="color: grey; font-size: 12px;">2024-01-06 16:02 | 規格: B.白紫DC3729106,US 6.5=23.5CM</p>
+                  <p style="font-size: 14px;">
+                    <span style="display: inline-block;"><span style="color: grey;">品質:</span>👌</span><br>
+                    <span style="display: inline-block;" class="pt-1 mt-1"><span style="color: grey;">效能:</span>👌</span><br>
+                    <span style="display: inline-block;" class="pt-1 mt-1"><span style="color: grey;">和圖片相符:</span>👌</span><br>
+                    <span style="display: inline-block" class="pt-2 mt-1">
+                      價格實惠，出貨迅速確實，尺碼稍嫌小一點（若穿薄襪子算是還正常尺寸）。<br><br>
+                      拍下前，記得假皮商城名稱是NKIE運動館之類的，後來再看已經改掉。評價中有人覺得真品可靠度商榷空間。
+                      不過商場背後的註冊公司看起來也是假皮自己。</span>
+                  </p>
+                  <div class="d-flex" style="width: 300px;height: 70px;">
+                    <iframe sandbox="" src="public/img/product/shoe6.mp4" style="width: 70px; object-fit: cover;" alt="problem"></iframe>
+                    <img src="public/img/product/shoe6.jpg" style="width: 70px; object-fit: cover;" alt="problem" class="ms-2">
+                    <img src="public/img/product/shoe6-2.jpg" style="width: 70px; object-fit: cover;" alt="problem" class="ms-2">
+                    <img src="public/img/product/shoe6-3.jpg" style="width: 70px; object-fit: cover;" alt="problem" class="ms-2">
+                  </div>
+                </div>
+                <div class="mt-4 mb-3 d-flex justify-content-between" style="color:rgb(192, 192, 192);font-size:14px;">
+                  <span class="ps-5"><i class="fa-solid fa-thumbs-up"></i>&nbsp;有幫助的評價</span>
+                  <span style="margin-left: -30px;"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div> 
+            </div>
+            <nav aria-label="Page navigation example" class="mt-4">
+              <ul class="pagination d-flex justify-content-center">
+                <li class="page-item">
+                  <a class="page-link fs-5 border-0 py-0 text-secondary" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&lt;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link fs-5 border-0 py-0 mx-4 active rounded" href="#" style="background-color: #d0011b;">1</a></li>
+                <li class="page-item"><a class="page-link fs-5 text-secondary border-0 py-0 mx-4 rounded" href="#">2</a></li>
+                <li class="page-item"><a class="page-link fs-5 text-secondary border-0 py-0 mx-4 rounded" href="#">3</a></li>
+                <li class="page-item"><a class="page-link fs-5 text-secondary border-0 py-0 mx-4 rounded" href="#">4</a></li>
+                <li class="page-item"><a class="page-link fs-5 text-secondary border-0 py-0 mx-4 rounded" href="#">5</a></li>
+                <li class="page-item"><a class="page-link fs-5 text-secondary border-0 py-0 mx-4 rounded" href="#">...</a></li>
+                <li class="page-item">
+                  <a class="page-link fs-5 border-0 py-0 text-secondary" href="#" aria-label="Next">
+                    <span aria-hidden="true">&gt;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>            
+          </div>
+        </div>
+        <!-- rightSide -->
+        <div class="col-2 px-1">
+          <div class="container bg-white p-4" style="overflow: auto;height: 430px;">
+            <p style="color: grey;font-size: 15px;" class="row">賣場優惠券</p>
+            <div class="row" style="width: 210px;background-color: rgb(254, 239, 241);border-radius: 2px;">
+              <div class="col-7" style="border-right: 1px dashed grey;" >
+                <p style="color: #d0011b;font-size: 14px" class="mb-0 pt-3">折$100</p>
+                <p style="color: #d0011b;font-size: 12px;" class="mb-2">低消$1,000</p>
+                <div class="progress" style="height: 4px;background-color: lightgrey;">
+                  <div class="progress-bar" role="progressbar" style="width: 73%; background-image: linear-gradient(90deg, red, orange);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p style="color:grey;font-size: 10px;line-height: 14px;margin-top: 3px;" class="pb-1">已使用73%, 有效日期: 2024.01.31</p>
+              </div>
+              <div class="col-5 align-self-center text-center">
+                <button style="font-size: 10px; background-color:#d0011b;color: #fff; border: none;
+                padding: 10px 18px; border-radius: 2px;">領取</button>
+              </div>
+            </div>
+            <div class="row mt-3" style="width: 210px;background-color: rgb(254, 239, 241);border-radius: 2px;">
+              <div class="col-7" style="border-right: 1px dashed grey;" >
+                <p style="color: #d0011b;font-size: 14px" class="mb-0 pt-3">折$300</p>
+                <p style="color: #d0011b;font-size: 12px;" class="mb-0">低消$1,500</p>
+                <div style="font-size: 12px;border: 1px solid red;color: red;" class="text-center d-inline-block px-1 mb-2"  >
+                 指定商品適用
+                </div>
+                <p style="color:grey;font-size: 10px;line-height: 14px;margin-top: 3px;" class="pb-1">已使用73%, 有效日期: 2024.01.31</p>
+              </div>
+              <div class="col-5 align-self-center text-center">
+                <button style="font-size: 10px; background-color:#d0011b;color: #fff; border: none;
+                padding: 10px 18px; border-radius: 2px;">領取</button>
+              </div>
+            </div>
+            <div class="row mt-3" style="width: 210px;background-color: rgb(254, 239, 241);border-radius: 2px;">
+              <div class="col-7" style="border-right: 1px dashed grey;" >
+                <p style="color: #d0011b;font-size: 14px" class="mb-0 pt-3">折$240</p>
+                <p style="color: #d0011b;font-size: 12px;" class="mb-2">低消$2,000</p>
+                <div class="progress" style="height: 4px;background-color: lightgrey;">
+                  <div class="progress-bar" role="progressbar" style="width: 73%; background-image: linear-gradient(90deg, red, orange);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p style="color:grey;font-size: 10px;line-height: 14px;margin-top: 3px;" class="pb-1">已使用73%, 有效日期: 2024.01.31</p>
+              </div>
+              <div class="col-5 align-self-center text-center">
+                <button style="font-size: 10px; background-color:#d0011b;color: #fff; border: none;
+                padding: 10px 18px; border-radius: 2px;">領取</button>
+              </div>
+            </div>  
+            <div class="row mt-3" style="width: 210px;background-color: rgb(254, 239, 241);border-radius: 2px;">
+              <div class="col-7" style="border-right: 1px dashed grey;" >
+                <p style="color: #d0011b;font-size: 14px" class="mb-0 pt-3">折$100</p>
+                <p style="color: #d0011b;font-size: 12px;" class="mb-2">低消$1,000</p>
+                <div class="progress" style="height: 4px;background-color: lightgrey;">
+                  <div class="progress-bar" role="progressbar" style="width: 73%; background-image: linear-gradient(90deg, red, orange);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p style="color:grey;font-size: 10px;line-height: 14px;margin-top: 3px;" class="pb-1">已使用73%, 有效日期: 2024.01.31</p>
+              </div>
+              <div class="col-5 align-self-center text-center">
+                <button style="font-size: 10px; background-color:#d0011b;color: #fff; border: none;
+                padding: 10px 18px; border-radius: 2px;">領取</button>
+              </div>
+            </div>  
+            <div class="row mt-3" style="width: 210px;background-color: rgb(254, 239, 241);border-radius: 2px;">
+              <div class="col-7" style="border-right: 1px dashed grey;" >
+                <p style="color: #d0011b;font-size: 14px" class="mb-0 pt-3">折$100</p>
+                <p style="color: #d0011b;font-size: 12px;" class="mb-2">低消$1,000</p>
+                <div class="progress" style="height: 4px;background-color: lightgrey;">
+                  <div class="progress-bar" role="progressbar" style="width: 73%; background-image: linear-gradient(90deg, red, orange);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p style="color:grey;font-size: 10px;line-height: 14px;margin-top: 3px;" class="pb-1">已使用73%, 有效日期: 2024.01.31</p>
+              </div>
+              <div class="col-5 align-self-center text-center">
+                <button style="font-size: 10px; background-color:#d0011b;color: #fff; border: none;
+                padding: 10px 18px; border-radius: 2px;">領取</button>
+              </div>
+            </div>  
+            <div class="row mt-3" style="width: 210px;background-color: rgb(254, 239, 241);border-radius: 2px;">
+              <div class="col-7" style="border-right: 1px dashed grey;" >
+                <p style="color: #d0011b;font-size: 14px" class="mb-0 pt-3">折$100</p>
+                <p style="color: #d0011b;font-size: 12px;" class="mb-2">低消$1,000</p>
+                <div class="progress" style="height: 4px;background-color: lightgrey;">
+                  <div class="progress-bar" role="progressbar" style="width: 73%; background-image: linear-gradient(90deg, red, orange);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p style="color:grey;font-size: 10px;line-height: 14px;margin-top: 3px;" class="pb-1">已使用73%, 有效日期: 2024.01.31</p>
+              </div>
+              <div class="col-5 align-self-center text-center">
+                <button style="font-size: 10px; background-color:#d0011b;color: #fff; border: none;
+                padding: 10px 18px; border-radius: 2px;">領取</button>
+              </div>
+            </div>  
+            <div class="row mt-3" style="width: 210px;background-color: rgb(254, 239, 241);border-radius: 2px;">
+              <div class="col-7" style="border-right: 1px dashed grey;" >
+                <p style="color: #d0011b;font-size: 14px" class="mb-0 pt-3">折$100</p>
+                <p style="color: #d0011b;font-size: 12px;" class="mb-2">低消$1,000</p>
+                <div class="progress" style="height: 4px;background-color: lightgrey;">
+                  <div class="progress-bar" role="progressbar" style="width: 73%; background-image: linear-gradient(90deg, red, orange);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p style="color:grey;font-size: 10px;line-height: 14px;margin-top: 3px;" class="pb-1">已使用73%, 有效日期: 2024.01.31</p>
+              </div>
+              <div class="col-5 align-self-center text-center">
+                <button style="font-size: 10px; background-color:#d0011b;color: #fff; border: none;
+                padding: 10px 18px; border-radius: 2px;">領取</button>
+              </div>
+            </div>  
+            <div class="row mt-3" style="width: 210px;background-color: rgb(254, 239, 241);border-radius: 2px;">
+              <div class="col-7" style="border-right: 1px dashed grey;" >
+                <p style="color: #d0011b;font-size: 14px" class="mb-0 pt-3">折$100</p>
+                <p style="color: #d0011b;font-size: 12px;" class="mb-2">低消$1,000</p>
+                <div class="progress" style="height: 4px;background-color: lightgrey;">
+                  <div class="progress-bar" role="progressbar" style="width: 73%; background-image: linear-gradient(90deg, red, orange);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p style="color:grey;font-size: 10px;line-height: 14px;margin-top: 3px;" class="pb-1">已使用73%, 有效日期: 2024.01.31</p>
+              </div>
+              <div class="col-5 align-self-center text-center">
+                <button style="font-size: 10px; background-color:#d0011b;color: #fff; border: none;
+                padding: 10px 18px; border-radius: 2px;">領取</button>
+              </div>
+            </div>                                                                                                                                                       
+          </div>
+          <div class="container bg-white mt-3 px-0">
+            <p class="px-3 pt-3" style="color:gray;font-size: 15px;">店長推薦</p>
+            <div class="border-bottom pb-3 px-0">
+              <img src="public/img/product/店長推薦1.jpg" width="100%" alt="problem">
+              <div class="ms-2">NIKE 女 WMNS COURT VISION LOW 流行 休閒...</div>
+              <div class="ms-2" style="color: #d0011b;">$1,300</div>
+            </div>
+            <div class="border-bottom my-3 pb-3 px-2">
+              <img src="public/img/product/店長推薦2.jpg" width="100%" alt="problem">
+              <div class="ms-2 mt-1">NIKE 女 COURT BOROUGH LOW 2 GS...</div>
+              <div class="ms-2" style="color: #d0011b;">$1,150</div>
+            </div>
+            <div class="border-bottom my-3 pb-3 px-2">
+              <img src="public/img/product/店長推薦3.jpg" width="100%" alt="problem">
+              <div class="ms-2 mt-1">NIKE 休閒鞋 運動鞋 WMNS COURT LEGACY...</div>
+              <div class="ms-2" style="color: #d0011b;">$1,400</div>
+            </div>
+            <div class="border-bottom my-3 pb-3 px-2">
+              <img src="public/img/product/店長推薦4.jpg" width="100%" alt="problem">
+              <div class="ms-2 mt-1">NIKE 慢跑鞋 運動鞋 AIR ZOOM PEGASUS 39 男...</div>
+              <div class="ms-2" style="color: #d0011b;">$2,275</div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- tooltip -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      // swiper
+      var swiper = new Swiper(".mySwiper", {
+        //   loop: true,
+        spaceBetween: 10,
+        slidesPerView: 5,
+        // freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        //   loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+      // tooltip
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+
+      let amount = document.getElementById('amount');
+      let plus = document.getElementById('plus');
+      let minus = document.getElementById('minus');
+      
+      // amount input
+      plus.addEventListener('click', () => {
+        let count = amount.value;
+        if(count === amount.value) {
+            if(count < 123) {
+              count++;
+              amount.value = count;
+            }else {
+              amount.value = 123;
+            }
+        }
+      });
+      minus.addEventListener('click', () => {
+        let count = amount.value;
+        if(count > 1) {
+          count--;
+          amount.value = count;
+        }
+      });
+      
+    </script>
+  </body>
+</html>
